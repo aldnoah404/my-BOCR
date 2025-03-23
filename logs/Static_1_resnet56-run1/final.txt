@@ -1,0 +1,1 @@
+seed: 1, static_cluster: False, Metric: acc1
