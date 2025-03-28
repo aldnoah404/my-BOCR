@@ -43,8 +43,8 @@ def parse_args():
     parser.add_argument('--debug', dest='debug', action='store_true')
     parser.add_argument('--seed', default=None, type=int, help='random seed to set')
     parser.add_argument('--n_gpu', default=1, type=int, help='number of gpu to use')
-    parser.add_argument('--n_worker', default=2, type=int, help='number of data loader worker')
-    parser.add_argument('--data_bsize', default=20, type=int, help='number of data batch size')
+    parser.add_argument('--n_worker', default=6, type=int, help='number of data loader worker')
+    parser.add_argument('--data_bsize', default=50, type=int, help='number of data batch size')
     # export
     parser.add_argument('--ratios', default=None, type=str, help='ratios for pruning')
     parser.add_argument('--channels', default=None, type=str, help='channels after pruning')

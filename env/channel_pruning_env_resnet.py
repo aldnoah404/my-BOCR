@@ -196,6 +196,7 @@ class ChannelPruningEnv:
         # now assign
         op.weight.data = rec_weight
         action = np.sum(_mask) * 1. / len(_mask)  # calculate the ratio
+        # 直接修改参数了，不是伪剪枝
         if self.export_model:  # prune previous buffer ops
             prev_idx = self.all_layers[self.all_layers.index(op_idx) - 1]
             print('layers to be compressed: {} --> {}'.format(prev_idx, op_idx))

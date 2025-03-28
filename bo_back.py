@@ -34,7 +34,7 @@ def parse_args():
                         help='method to prune (fg/cp for fine-grained and channel pruning)')
     parser.add_argument('--channel_round', default=1, type=int, help='Round channel to multiple of channel_round')
     # training
-    parser.add_argument('--gpu_idx', default="1", type=str, help='choose which gpu to use')
+    parser.add_argument('--gpu_idx', default="0", type=str, help='choose which gpu to use')
     parser.add_argument('--max_iter', default=190, type=int, help='')# iteration of firsty BO search
     parser.add_argument('--initial_points', default=10, type=int, help='')# num of initial points
     parser.add_argument('--output', default='./logs', type=str, help='')
